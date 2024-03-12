@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Idade</title>
+</head>
+<body>
+    <form>
+        <label for="idade">Digite o mês do seu nascimento: </label><br>
+        <input type="number" id="meses"><br>
+        <label for="idade">Digite o ano do seu nascimento: </label><br>
+        <input type="number" id="id"><br>
+        <button onclick="verificar()">Verificar</button>
+    </form>
+
+   
+    <script>
+        var idade = document.querySelector('#id');
+        var mes = document.querySelector('#meses');
+        const ano = 2024;
+        const meses = 12;
+     
+        function verificar(){
+
+            var id = ano - parseInt(idade.value);
+            var month  = meses - parseInt(mes.value);
+            alert("Sua idade é: " + id + " anos.");
+        }
+    </script>
+</body>
+</html>

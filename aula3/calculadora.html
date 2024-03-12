@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="n1">Digite um numero: </label><br>
+        <input type="number" id="um"><br>
+        <label for="n1">Digite outro numero: </label><br>
+        <input type="number" id="dois">
+    </form>
+
+    <button onclick="somar()">Soma</button>
+    <button onclick="sub()">Subtração</button>
+    <button onclick="mult()">Multiplicação</button>
+    <button onclick="div()">Divisão</button>
+
+    <h2>O resultado é: <span></span></h2>
+
+    <script>
+        var um = document.querySelector('#um')
+        var dois = document.querySelector('#dois')
+        var result = document.querySelector('span')
+     
+         function somar(){
+            result.innerHTML = parseInt(um.value) + parseInt(dois.value)
+         }
+     
+         function sub(){
+            result.innerHTML = parseInt(um.value) - parseInt(dois.value)
+         }
+
+         function mult(){
+            result.innerHTML = parseInt(um.value) * parseInt(dois.value)
+         }
+
+         function div(){
+            result.innerHTML = parseInt(um.value) / parseInt(dois.value)
+         }
+
+
+     
+     </script>
+</body>
+
+
+</html>

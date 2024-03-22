@@ -1,8 +1,14 @@
 #container{
     width: 50%;
-    height: 200px;
+    height:300px;
     align-content: center;
-    background-color: antiquewhite;
+    background-color: rgb(185, 130, 185);
+     border: 8px dashed rgb(151, 102, 151) ;
+}
+
+ h1{
+    text-align: center;
+    color: aliceblue;
 }
 
 div{
@@ -11,24 +17,26 @@ div{
 
 input{
     margin-top: 20px;
-    margin-left: 45px;
-}
-
-#word-display{
-    color: rgb(48, 161, 196);
+    margin-left: 50px;
     text-align: center;
-}
-button{
-    background-color: rgb(43, 127, 196);
-    border: 1px solid blue;
-    border-radius: 6px;
-    transition: 0.3;
-    width: 100px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 48%;
     height: 20px;
 }
 
-button:hover{
-    background-color: transparent;
-    transform: scale(1.2);
+#word-display{
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+}
 
+button{
+    color: aliceblue;
+    background-color: rgb(131, 88, 145);
+    border: 3px double rgb(185, 130, 185);
+    border-radius: 6px;
+    transition: 0.3;
+    width: 100px;
+    height: 25px;
 }
